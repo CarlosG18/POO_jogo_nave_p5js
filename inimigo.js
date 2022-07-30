@@ -1,5 +1,5 @@
 class Inimigo extends Nave{
-  constructor(x_nave, y_nave, cor, l, a,id,aparecer=true, vel=random(1,6), atingido = false){
+  constructor(x_nave, y_nave, cor, l, a,id,aparecer=true, vel=random(1,4), atingido = false){
     super(x_nave, y_nave, cor);
     this.w = l;
     this.h = a;

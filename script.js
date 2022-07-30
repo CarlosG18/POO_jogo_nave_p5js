@@ -1,12 +1,14 @@
 var larg = 300, alt = 200;
 var falcon;
-var n_viloes = 10;
+var n_viloes = 5;
 var viloes = [];
 var municao = [];
 var max_municao = 10;
 var cores = ["yellow", "red", "gray", "blue", "green"];
 var delay = 0;
 var cont = 0;
+
+var n_botoes;
 
 function preload() {
   img_fundo = loadImage('assets/buraco_negro.png');
@@ -20,6 +22,7 @@ function setup() {
     viloes[i] = new Inimigo(0, random(20,180), random(cores), 30,10,i);
   }
 }
+
 
 function hit_balas(viloes, municao) {
   for(var i=0; i<viloes.length; i++){
