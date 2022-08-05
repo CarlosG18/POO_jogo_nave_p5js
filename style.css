@@ -1,34 +1,181 @@
 @import url('https://fonts.googleapis.com/css2?family=Contrail+One&display=swap');
 
-*{
-  margin: 0px;
-  padding: 0px;
+:root{
+  --cor1: #FDBA14;
+  --cor2: #034AA6;
+  --font1: 'Contrail One', cursive;
 }
 
-:root{
-  --cor1: #F20519;
-  --cor2: #F4C4B4;
-  --cor3: #543294;
-  --cor4: #034AA6;
-  --cor5: #1FBBE6;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 body{
-  font-family: 'Contrail One', cursive;
-  color: white;
-  background-color: black;
+  font-family: var(--font1);
+  background: linear-gradient(to bottom,var(--cor2),#000);
 }
-.box{
+
+header{
+  background-color: var(--cor1);
+}
+
+a{
+  color: #000;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+nav{
+  padding: 20px;
+  font-size: 25px;
   display: flex;
-  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-list{
+  display: flex;
+}
+
+.nav-list li{
+  list-style-type: none;
+  margin-left: 30px;
+}
+
+#rocket{
+  width: 500px;
+  height: 500px;
+}
+
+.init{
+  color: #fff;
+  height: 25vh;
+  display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 30px;
+  text-align: center;
 }
-.box_content{
-  margin: 10px;
-  font-size: 1.5em;
+
+.init .destaque{
+  font-size: 6em;
+  text-shadow: 5px 5px 1px #00000061;
+  margin-bottom: 5px;
 }
-.box_content > h1{
-  font-size: 3.5em;
+
+.init p{
+  margin-bottom: 20px;
+  margin: auto;
+  width: 40%;
+}
+
+/* From uiverse.io by @Voxybuns */
+button {
+  /* Variables */
+  --button_radius: 0.75em;
+  --button_color: #FDBA14;
+  --button_outline_color: #000000;
+  font-size: 17px;
+  font-weight: bold;
+  border: none;
+  border-radius: var(--button_radius);
+  background: var(--button_outline_color);
+  margin-top: 20px;
+}
+
+.button_top {
+  display: block;
+  box-sizing: border-box;
+  border: 2px solid var(--button_outline_color);
+  border-radius: var(--button_radius);
+  padding: 0.75em 1.5em;
+  background: var(--button_color);
+  color: var(--button_outline_color);
+  transform: translateY(-0.2em);
+  transition: transform 0.1s ease;
+}
+
+button:hover .button_top {
+  /* Pull the button upwards when hovered */
+  transform: translateY(-0.33em);
+}
+
+button:active .button_top {
+  /* Push the button downwards when pressed */
+  transform: translateY(0);
+}
+
+.quadro{
+  height: 200px;
+  width: 200px;
+  border-radius: 25%;
+  background: #fff;
+  margin: 0px auto 60px auto;
+}
+
+.list-quadro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+article .destaque{
+  color: #fff;
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.box{
+  background-color: var(--cor2);
+  padding: 70px 0px;
+}
+
+#como_jogar{
+  background: none;
+}
+
+#controles .quadro{
+  width: 400px;
+  height: 600px;
+  border-radius: 20px;
+  background-color: var(--cor1);
+}
+
+#area_game{
+  background: none;
+  height: 500px;
+}
+
+#footer{
+  background: none;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rs{
+  width: 50px;
+  height: 50px;
+  margin: 20px auto;
+}
+
+.list-group{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+address{
+  margin-bottom: 90px;
+}
+
+footer p{
+  background-color: var(--cor1);
+  color: #000;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  padding: 5px;
 }

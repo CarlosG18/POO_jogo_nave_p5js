@@ -10,21 +10,66 @@
 <script defer src="https://unpkg.com/p5.collide2d"></script>
   </head>
   <body>
-       <div class="box">
-         <div class="box_content">
-           <h1> FLYEND </h1>
-         </div>
-       </div>
-       <div class="box">
-         <div class="box_content">
-            <p> jogo em desenvolvimento, ultilizando as plataformas: replit, P5.js e teacheable machine</p>
-         </div>
-       </div>
-    <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 500" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><defs><linearGradient id="gradient" x1="64%" y1="2%" x2="36%" y2="98%"><stop offset="5%" stop-color="#034aa688"></stop><stop offset="95%" stop-color="#00000088"></stop></linearGradient></defs><path d="M 0,500 C 0,500 0,166 0,166 C 65.13875598086125,128.1531100478469 130.2775119617225,90.30622009569379 241,104 C 351.7224880382775,117.69377990430621 508.02870813397135,182.92822966507177 628,213 C 747.9712918660287,243.07177033492823 831.6076555023925,237.98086124401914 904,219 C 976.3923444976075,200.01913875598086 1037.5406698564593,167.14832535885168 1125,156 C 1212.4593301435407,144.85167464114832 1326.2296650717703,155.42583732057415 1440,166 C 1440,166 1440,500 1440,500 Z" stroke="none" stroke-width="0" fill="url(#gradient)" class="transition-all duration-300 ease-in-out delay-150 path-0" transform="rotate(-180 720 250)"></path><defs><linearGradient id="gradient" x1="64%" y1="2%" x2="36%" y2="98%"><stop offset="5%" stop-color="#034aa6ff"></stop><stop offset="95%" stop-color="#000000ff"></stop></linearGradient></defs><path d="M 0,500 C 0,500 0,333 0,333 C 71.05263157894737,321.20095693779905 142.10526315789474,309.4019138755981 234,326 C 325.89473684210526,342.5980861244019 438.63157894736844,387.59330143540666 543,384 C 647.3684210526316,380.40669856459334 743.3684210526314,328.22488038277515 846,328 C 948.6315789473686,327.77511961722485 1057.8947368421054,379.5071770334928 1158,389 C 1258.1052631578946,398.4928229665072 1349.0526315789473,365.7464114832536 1440,333 C 1440,333 1440,500 1440,500 Z" stroke="none" stroke-width="0" fill="url(#gradient)" class="transition-all duration-300 ease-in-out delay-150 path-1" transform="rotate(-180 720 250)"></path></svg>
-    <div class="box">
-      <div id="box_game">
+        <header>
+    <nav>
+      <a id="logo" href="/"> K18 Games </a>
+      <ul class="nav-list">
+        <li><a href="#area_game">Jogar</a></li>
+        <li><a href="#como_jogar">Ajuda</a></li>
+        <li><a href="#login">login</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <article class="init">
+      <img id="rocket" src="rocket_boy.svg" alt="rocket">
+      <div class="container">
+      <h1 class="destaque"> FLYEND </h1>
+      <p> controle uma nave com o movimento do seu corpo e salve o planeta dos invasores!</p>
+      <button>
+        <span class="button_top"> Jogar
+        </span>
+      </button>
       </div>
-    </div>
+    </article>
+    
+    <article class="box">
+      <h1 class="destaque"> Tecnologias </h1>
+      <div class="list-quadro">
+        <div class="quadro"></div>
+        <div class="quadro"></div>
+        <div class="quadro"></div>
+      </div>
+    </article>
+    
+    <article id="como_jogar" class="box">
+      <h1 class="destaque"> Como Jogar? </h1>
+      <div id="controles" class="list-quadro">
+        <div class="quadro"></div>
+        <div class="quadro"></div>
+      </div>
+    </article>
+    
+    <article id="area_game" class="box">
+      <h1 class="destaque"> FLYEND </h1>
+      <div class="list-quadro">
+        <div id="box_game"></div>
+      </div>
+    </article>
+    
+  </main>
+  
+  <footer id="footer" class="box">
+    <address>
+      <h1> siga-me em minhas redes sociais</h1>
+      <div class="list-group">
+        <img class="rs" src="github.png" alt="github_logo">
+        <img class="rs" src="instagram.png" alt="insta_logo">
+        <img class="rs" src="linkedin.png" alt="linkedin_logo">
+      </div>
+    </address>
+    <p> desenvolvido por Carlos Gabriel Medeiros da Silva </p>
+  </footer>
         
     <script src="script.js"></script>
     <script src="nave.js"></script>
