@@ -9,6 +9,4 @@ p5.js is a JavaScript library for creative coding, with a focus on making coding
 # Sobre
 Este jogo tem como objetivo ultilizar o movimento capturados por uma web-cam como controle para o jogo.
 
-Link para o jogo em desenvolvimento: https://poojogoversaogab.carlossilva58.repl.co/
-
 
