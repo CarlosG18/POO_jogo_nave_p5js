@@ -203,7 +203,9 @@ article .destaque{
 
 #area_game{
   background: none;
-  height: 500px;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
 }
 
 #footer{
@@ -249,6 +251,12 @@ footer p{
   margin: auto;
 }
 
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (max-width: 360px){
   #rocket{
     width: 250px;
@@ -279,6 +287,10 @@ footer p{
   
   footer h1{
     text-align: center;
+  }
+  
+  .center{
+    flex-direction: column;
   }
 }
 

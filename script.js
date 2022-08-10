@@ -16,7 +16,7 @@ function preload() {
 
 function setup() {
   var cc = createCanvas(larg,alt);
-  cc.parent('box_game');
+  cc.id('box_game');
   game = new Setup();
   falcon = new Nave(270,100,"white");
   for(var i=0; i<n_viloes; i++){
