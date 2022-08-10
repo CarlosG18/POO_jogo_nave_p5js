@@ -12,6 +12,7 @@
 }
 
 body{
+  min-height: 100vh;	
   font-family: var(--font1);
   background: linear-gradient(to bottom,var(--cor2),#000);
 }
@@ -24,6 +25,10 @@ a{
   color: #000;
   text-decoration: none;
   letter-spacing: 2px;
+}
+
+a:hover{
+  color: var(--cor2);
 }
 
 nav{
@@ -105,12 +110,66 @@ button:active .button_top {
   transform: translateY(0);
 }
 
-.quadro{
-  height: 200px;
-  width: 200px;
-  border-radius: 25%;
-  background: #fff;
-  margin: 0px auto 60px auto;
+.card {
+  width: 190px;
+  height: 254px;
+  border-radius: 20px;
+  background: var(--cor1);
+  position: relative;
+  border: 3px solid var(--cor1);
+  padding: 1.8rem;
+  transition: 0.5s ease-out;
+  overflow: visible;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-details {
+  color: black;
+  height: 100%;
+  gap: .5em;
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+
+.card-button {
+  transform: translate(-50%, 125%);
+  width: 60%;
+  border-radius: 1rem;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  font-size: 1rem;
+  padding: .5rem 1rem;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  opacity: 0;
+  transition: 0.3s ease-out;
+}
+
+.text-body {
+  color: #000;
+}
+
+/*Text*/
+.text-title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/*Hover*/
+.card:hover {
+  border-color: black;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+.card:hover .card-button {
+  transform: translate(-50%, 50%);
+  opacity: 1;
 }
 
 .list-quadro{
@@ -179,3 +238,47 @@ footer p{
   text-align: center;
   padding: 5px;
 }
+
+.img_logos{
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+.quadro{
+  margin: auto;
+}
+
+@media (max-width: 360px){
+  #rocket{
+    width: 250px;
+    height: 250px;
+  }
+  
+  .init{
+    height: 70vh;
+    flex-direction: column;
+    margin: 30px;
+  }
+  
+  .init .destaque{
+    font-size: 3em;
+  }
+  
+  .box{
+    flex-direction: column;
+  }
+  
+  .list-quadro{
+    flex-direction: column;
+  }
+  
+  .card{
+    margin-bottom: 60px;
+  }
+  
+  footer h1{
+    text-align: center;
+  }
+}
+
