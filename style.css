@@ -71,7 +71,7 @@ nav{
 .init p{
   margin-bottom: 20px;
   margin: auto;
-  width: 40%;
+  width: 80%;
 }
 
 /* From uiverse.io by @Voxybuns */
@@ -257,6 +257,10 @@ footer p{
   align-items: center;
 }
 
+#box_game{
+  margin: 0px auto;
+}
+
 @media (max-width: 360px){
   #rocket{
     width: 250px;
@@ -266,7 +270,7 @@ footer p{
   .init{
     height: 70vh;
     flex-direction: column;
-    margin: 30px;
+    margin-bottom: 30px;
   }
   
   .init .destaque{
