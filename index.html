@@ -1,34 +1,33 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title> jogo da nave - POO</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.3.1/lib/p5.js"></script>
-<!-- Includes the p5.collide2D addon library -->
-<script defer src="https://unpkg.com/p5.collide2d"></script>
-  </head>
-  <body>
-        <header>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Nav </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
     <nav>
       <a id="logo" href="/"> K18 Games </a>
       <ul class="nav-list">
         <li><a href="#area_game">Jogar</a></li>
         <li><a href="#como_jogar">Ajuda</a></li>
-        <li><a href="#login">login</a></li>
+        <li><a href="/login.html">login</a></li>
       </ul>
     </nav>
   </header>
   <main>
     <article class="init">
-      <img id="rocket" src="rocket_boy.svg" alt="rocket">
+      <img id="rocket" src="assets/rocket_boy.svg" alt="rocket">
       <div class="container">
       <h1 class="destaque"> FLYEND </h1>
       <p> controle uma nave com o movimento do seu corpo e salve o planeta dos invasores!</p>
       <button>
-        <span class="button_top"> Jogar
-        </span>
+        <a href="#area_game"  class="button_top"> Jogar
+        </a>
       </button>
       </div>
     </article>
@@ -65,17 +64,10 @@
     
     <article id="como_jogar" class="box">
       <h1 class="destaque"> Como Jogar? </h1>
-      <div id="controles" class="list-quadro">
-        <div class="quadro"></div>
-        <div class="quadro"></div>
-      </div>
     </article>
     
     <article id="area_game" class="box">
       <h1 class="destaque"> FLYEND </h1>
-      <div class="list-quadro">
-        <div id="box_game"></div>
-      </div>
     </article>
     
   </main>
@@ -84,19 +76,15 @@
     <address>
       <h1> siga-me em minhas redes sociais</h1>
       <div class="list-group">
-        <img class="rs" src="github.png" alt="github_logo">
-        <img class="rs" src="instagram.png" alt="insta_logo">
-        <img class="rs" src="linkedin.png" alt="linkedin_logo">
+        <img class="rs" src="assets/github.png" alt="github_logo">
+        <img class="rs" src="assets/instagram.png" alt="insta_logo">
+        <img class="rs" src="assets/linkedin.png" alt="linkedin_logo">
       </div>
     </address>
     <p> desenvolvido por Carlos Gabriel Medeiros da Silva </p>
   </footer>
-        
-    <script src="script.js"></script>
-    <script src="nave.js"></script>
-    <script src="bala.js"></script>
-    <script src="setup.js"></script>
-    <script src="inimigo.js"></script>
-    <script src="bullet.js"></script>
-  </body>
+  
+  <script src="main.js"></script>
+</body>
 </html>
+
