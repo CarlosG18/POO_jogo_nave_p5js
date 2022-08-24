@@ -1,1 +1,4 @@
 entrypoint = "script.js"
+
+[nix]
+channel = "stable-21_11"
